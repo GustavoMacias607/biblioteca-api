@@ -40,7 +40,7 @@ jobs:
         run: dotnet test --no-build
 
       - name: Publicar el Web API
-        run: donet publish $proyecto -c Release -o miapp --runtime win-x86
+        run: dotnet publish $proyecto -c Release -o miapp --runtime win-x86
 
       - name: Cargar Artefacto
         uses: actions/upload-artifact@v7.0.1
